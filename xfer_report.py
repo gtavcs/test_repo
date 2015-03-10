@@ -17,7 +17,7 @@ class myHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                 self.finish()
 
 def do_the_big_query(date1):
-	con = MySQLdb.connect(host="localhost",user="gta_ro",passwd="glacier",db="cm")
+	con = MySQLdb.connect(host="localhost",user="",passwd="",db="cm")
 	cur = con.cursor()
 	query = "SELECT switch_id FROM control.switch_id WHERE switch = '" + switch + "' LIMIT 1"
 	output = ""
